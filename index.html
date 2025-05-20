@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Tech Portfolio - Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            color: #333;
+        }
+        header {
+            background-color: #f4a261;
+            padding: 20px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .hero {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            background: #264653;
+            color: white;
+            padding: 50px 20px;
+            text-align: right;
+        }
+        .hero img {
+            max-width: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        .about, .services, .testimonials, .contact {
+            padding: 40px 20px;
+        }
+        .about {
+            background-color: #2a9d8f;
+            color: white;
+        }
+        .services {
+            background-color: #e9c46a;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .service-item {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .service-item i {
+            font-size: 2rem;
+            color: #264653;
+        }
+        .testimonials {
+            background-color: #f4a261;
+            color: white;
+        }
+        .testimonial-item {
+            margin-bottom: 20px;
+        }
+        .contact {
+            background-color: #264653;
+            color: white;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact button {
+            background-color: #e76f51;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #2a9d8f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h1>John's Tech Portfolio</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h2>Welcome to John's Tech World</h2>
+                <p>Innovate, Implement, Inspire. Discover cutting-edge technology solutions tailored for your needs.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514" alt="Tech Image">
+        </section>
+        <section class="about">
+            <h2>About EFRG</h2>
+            <p>EFRG is a forward-thinking technology firm dedicated to revolutionizing the way businesses operate. Our mission is to provide state-of-the-art solutions that empower companies to reach their full potential. With a passionate team of experts, we cater to a diverse range of industries, delivering bespoke services that meet unique business needs.</p>
+            <p>Our audience comprises ambitious enterprises looking to leverage technology for competitive advantage. We believe in the transformative power of innovation and strive to create impactful solutions through collaboration, creativity, and integrity.</p>
+            <ul>
+                <li>Custom Software Development</li>
+                <li>Cloud Solutions & Integration</li>
+                <li>Data Analytics & Insights</li>
+                <li>Cybersecurity & Compliance</li>
+                <li>AI & Machine Learning</li>
+                <li>Digital Transformation Strategy</li>
+            </ul>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Software Development</h3>
+                    <p>Creating robust applications tailored to your business needs, ensuring seamless integration and functionality.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Solutions</h3>
+                    <p>Leverage the power of cloud computing to enhance your operational efficiency and scalability.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your assets with our comprehensive cybersecurity services designed to safeguard your digital presence.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-item">
+                <blockquote>
+                    "EFRG transformed our business operations with their innovative solutions. Their expertise in cloud computing has allowed us to scale effortlessly."
+                </blockquote>
+                <cite>— Jane Doe, CEO of TechCorp</cite>
+            </div>
+            <div class="testimonial-item">
+                <blockquote>
+                    "The team at EFRG is simply outstanding. They delivered a custom software solution that has dramatically improved our productivity."
+                </blockquote>
+                <cite>— John Smith, CTO of InnovateX</cite>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 John's Tech Portfolio | Follow us on
+            <a href="#" style="color: white;"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" style="color: white;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="color: white;"><i class="fab fa-linkedin-in"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
