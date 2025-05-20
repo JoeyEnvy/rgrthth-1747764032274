@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Tech Portfolio - Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            color: #555;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #264653;
+            padding: 15px;
+            color: white;
+            text-align: left;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #e76f51;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero img {
+            max-width: 60%;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .about, .services, .testimonials, .contact {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about {
+            background-color: #2a9d8f;
+            color: white;
+        }
+        .services {
+            background-color: #f4a261;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-item {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .service-item i {
+            font-size: 2rem;
+            color: #264653;
+        }
+        .testimonials {
+            background-color: #264653;
+            color: white;
+        }
+        .testimonial-item {
+            margin-bottom: 20px;
+        }
+        .contact {
+            background-color: #e9c46a;
+            color: #333;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact input, .contact textarea {
+            width: 80%;
+            max-width: 500px;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact button {
+            background-color: #264653;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact button:hover {
+            background-color: #2a9d8f;
+        }
+        footer {
+            background-color: #264653;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+            .hero img {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h1>John's Tech Portfolio</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Innovate with EFRG</h2>
+            <p>At John’s Tech Portfolio, we are committed to providing cutting-edge technology solutions that drive your business forward.</p>
+            <img src="https://images.unsplash.com/photo-1581092795365-31dbb4b4f3b9" alt="Innovative Tech">
+        </section>
+        <section class="about">
+            <h2>About EFRG</h2>
+            <p>EFRG is a leading technology solutions provider, dedicated to fostering innovation and excellence. Our mission is to empower businesses through technology, offering a range of services designed to enhance operational efficiency and strategic growth. We serve a diverse clientele, from ambitious startups to established enterprises, with solutions tailored to meet unique needs.</p>
+            <p>Driven by our core values of innovation, integrity, and collaboration, we continuously strive to exceed client expectations and drive meaningful change in the tech landscape.</p>
+            <ul>
+                <li>End-to-End IT Solutions</li>
+                <li>Advanced Cybersecurity Practices</li>
+                <li>Cloud Strategy & Management</li>
+                <li>AI & Machine Learning Development</li>
+                <li>Comprehensive IT Consultancy</li>
+            </ul>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Networking Solutions</h3>
+                    <p>Enhance your connectivity with our advanced networking solutions tailored for optimal performance.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Management</h3>
+                    <p>Efficient data management services that empower you to make informed business decisions.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-cogs"></i>
+                    <h3>IT Support</h3>
+                    <p>Reliable IT support services that ensure your systems are always running smoothly.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>Client Feedback</h2>
+            <div class="testimonial-item">
+                <blockquote>
+                    "EFRG's networking solutions have significantly improved our internal communications and connectivity. Highly recommend their services!"
+                </blockquote>
+                <cite>— Emily White, IT Manager at ConnectPro</cite>
+            </div>
+            <div class="testimonial-item">
+                <blockquote>
+                    "We outsourced our data management to EFRG, and they've exceeded our expectations. Their expertise is unmatched."
+                </blockquote>
+                <cite>— Michael Green, CEO of DataSolutions</cite>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 John's Tech Portfolio | Follow us on
+            <a href="#" style="color: white;"><i class="fab fa-linkedin"></i></a>
+            <a href="#" style="color: white;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="color: white;"><i class="fab fa-facebook"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
