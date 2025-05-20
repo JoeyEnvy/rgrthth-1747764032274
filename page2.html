@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Tech Portfolio - Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            color: #444;
+        }
+        header {
+            background-color: #e76f51;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #2a9d8f;
+            color: white;
+            padding: 60px 20px;
+        }
+        .hero img {
+            max-width: 40%;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        .about, .services, .testimonials, .contact {
+            padding: 40px 20px;
+        }
+        .about {
+            background-color: #f4a261;
+            color: white;
+        }
+        .services {
+            background-color: #264653;
+            color: white;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .service-item {
+            background-color: #fff;
+            color: #264653;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .service-item i {
+            font-size: 2rem;
+            color: #e76f51;
+        }
+        .testimonials {
+            background-color: #2a9d8f;
+            color: white;
+        }
+        .testimonial-item {
+            margin-bottom: 20px;
+        }
+        .contact {
+            background-color: #e9c46a;
+            color: #333;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact input, .contact textarea {
+            width: 80%;
+            max-width: 400px;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact button {
+            background-color: #264653;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact button:hover {
+            background-color: #2a9d8f;
+        }
+        footer {
+            background-color: #264653;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero img {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h1>John's Tech Portfolio</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h2>Explore Our Tech Innovations</h2>
+                <p>At John’s Tech Portfolio, we blend creativity and technology to create solutions that inspire and transform businesses.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1612831455542-112f1edc7265" alt="Tech Innovation">
+        </section>
+        <section class="about">
+            <h2>About EFRG</h2>
+            <p>EFRG stands as a beacon of innovation in the technology realm. Our core mission is to deliver transformative tech solutions that not only streamline operations but also drive business growth. We cater to a diverse clientele, ranging from startups to established enterprises, ensuring that each solution is tailor-made to meet individual business needs.</p>
+            <p>Our commitment to excellence and customer satisfaction is reflected in our diverse service offerings and our ability to adapt to the ever-changing tech landscape. We are passionate about technology and its potential to change the world.</p>
+            <ul>
+                <li>Innovative Web & Mobile Development</li>
+                <li>Data Science & Machine Learning</li>
+                <li>Infrastructure Optimization</li>
+                <li>UI/UX Design Excellence</li>
+                <li>Strategic IT Consulting</li>
+            </ul>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Web Development</h3>
+                    <p>Expertly crafted websites that not only look great but also deliver a seamless user experience.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Solutions</h3>
+                    <p>Harness the power of artificial intelligence to gain insights and automate processes.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-analytics"></i>
+                    <h3>Data Analytics</h3>
+                    <p>Transform raw data into actionable insights with our comprehensive analytics solutions.</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial-item">
+                <blockquote>
+                    "The team at EFRG is exceptionally talented. Their AI solutions have helped us automate critical processes and improve efficiency across the board."
+                </blockquote>
+                <cite>— Sarah Lee, Operations Manager at DataCorp</cite>
+            </div>
+            <div class="testimonial-item">
+                <blockquote>
+                    "John's Tech Portfolio provided us with a state-of-the-art website that has greatly enhanced our customer engagement and online presence."
+                </blockquote>
+                <cite>— Mark Johnson, Founder of Creative Solutions</cite>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 John's Tech Portfolio | Follow us on
+            <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="color: white;"><i class="fab fa-github"></i></a>
+            <a href="#" style="color: white;"><i class="fab fa-youtube"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
